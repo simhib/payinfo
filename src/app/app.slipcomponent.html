@@ -1,0 +1,10 @@
+<div *ngIf="slip != null"  class="child">
+    <h2 >Payslip for {{slip.name}}</h2>
+    <div>
+        Pay Period   : {{slip.payPeriod}}
+        Gross Income : {{slip.grossIncome}}
+        Tax          : {{slip.tax}}
+        Nett Income  : {{slip.netIncome}}
+        Super        : {{slip.superGross}}
+    </div>  
+</div>
