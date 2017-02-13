@@ -26,7 +26,8 @@ The main payslip code is under the src/app location
 * taxCalculation.ts
 
 Made the taxCalculation seperate so test can be run.  This will test the tax calculations for diffrent annual salaries.
-Test were added for the payslip aswell that will test the outcome for a certain input.
+Test is in the following file
+* payslip.spec.ts
 
 ## Setup ##
 Clone the repocitory to your local machine and make sure Node.js is install `https://nodejs.org/en/`. Then in the root folder of the project run 
