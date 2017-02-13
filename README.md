@@ -28,12 +28,15 @@ The main payslip code is under the src/app location
 Made the taxCalculation seperate so test can be run.  This will test the tax calculations for diffrent annual salaries.
 Test were added for the payslip aswell that will test the outcome for a certain input.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup ##
+Clone the repocitory to your local machine and make sure Node.js is install `https://nodejs.org/en/`. Then in the root folder of the project run 
 
-## Build
+`npm install`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+This will install all the required npm packages to run the project.
+
+To test the project run the `ng serve` command in the root of the project. This will load a dev server.
+Once the server is running navigate to `http://localhost:4200/`.
 
 ## Running unit tests
 
