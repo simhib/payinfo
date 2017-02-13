@@ -1,14 +1,16 @@
 <h1>
   {{title}}
 </h1>
-
-<form [formGroup]="payInfo" (ngSubmit)="generateSlip($event)">
-  First Name: <input formControlName="firstName" type="text"><br>
-  Last Name: <input formControlName="lastName" type="text"><br>
-  Annual Salary: <input formControlName="annualSalary" type="number"><br>
-  Super Rate: <input formControlName="superRate" type="number"><br>
-  Start Date: <input formControlName="date" type="text"><br>
-  <button type="submit">Generate Pay Slip</button>
-</form>
+<div>
+  <form [formGroup]="payInfo" (ngSubmit)="generateSlip($event)">
+    First Name<br>
+    <input formControlName="firstName" type="text" required><br> Last Name<br>
+    <input formControlName="lastName" type="text" required><br> Annual Salary<br>
+    <input formControlName="annualSalary" type="number" min="0" required><br> Super Rate <em>(0%-50%)</em> <br>
+    <input formControlName="superRate" type="number" min="0" max="50" required><br> Start Date<br>
+    <input formControlName="date" type="text"><br>    
+    <button type="submit">Generate Pay Slip</button>
+  </form>
+</div>
 
 <slip-info [slip]="paySlip">Loading...</slip-info>

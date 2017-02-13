@@ -28,4 +28,8 @@ export class AppComponent {
     this.slip = new EmployeePayInfo(output["firstName"],output["lastName"],output["annualSalary"],output["superRate"],output["date"]);
     this.paySlip = this.slip.getPayInfo();
   }
+
+  onChange(event){
+    console.log(event);
+  }
 }
