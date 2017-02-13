@@ -3,7 +3,7 @@ import {Payslip} from './paySlipModel';
 
 @Component({
     selector: 'slip-info',
-    styleUrls: ['./app.component.css'],
+    styleUrls: ['./app.slipcomponent.css'],
     templateUrl: './app.slipcomponent.html'
 })
 
